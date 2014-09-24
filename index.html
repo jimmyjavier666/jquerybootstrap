@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -9,13 +10,48 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript">
 	$(function(){
-
+		
 	});
-	</script
+	</script>
 </head>
 <body>
 	<div class="container">
-		
+		<form class="well col-md-8">
+
+		  <div class="row">
+				<div class="col-md-3">
+
+					<label>Nombre</label>
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-control">
+
+					<label>Apellidos</label>
+					<input type="text" placeholder="Apellidos" id="apellidos" name="apellidos" class="form-control">
+
+					<label>Correo electrónico</label>
+					<input type="email" placeholder="Correo electrónico" id="email" name="email" class="form-control">
+
+					<label>Asunto</label>
+					<select id="asunto" name="asunto" class="form-control">
+						<option value="" selected="">Escoger:</option>
+						<option value="servicio">Servicio</option>
+						<option value="sugerencia">Sugerencia</option>
+						<option value="soporte">Soporte técnico</option>
+					</select>
+					
+
+				</div>
+				<div class="col-md-8">
+					<label>Mensaje</label>
+					<textarea name="mensaje" id="mensaje" class="form-control" rows="10"></textarea>
+				</div>							
+			</div>
+			<hr />
+			<div class="row">
+			<div class="col-md-11">
+				<button type="button" id="btnEnviar" name="btnEnviar" class="btn btn-primary pull-right">Enviar</button>
+			</div>
+		</div>
+		</form>
 	</div>
 </body>
 </html>
